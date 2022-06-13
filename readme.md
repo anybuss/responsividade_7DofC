@@ -6,14 +6,15 @@ Basicamente você começa e termina um projeto do zero durante esse período, fa
 Nesse desafio de responsividade, um dos principais objetos era praticar o conceito "Mobile First", que significa começar o projeto primeiro na versão mobile e depois fazer ajustes para as telas maiores. 
 
 O layout do projeto foi definido pela Alura, com resolução mínima de 360px e a máxima de 1440px (definido por mim).
-Um dos pedidos para para esse desafio, foi a não utilização de frameworks.
+
+Um dos pedidos para esse desafio, foi a não utilização de frameworks.
 
 ## Cronograma de desenvolvimento
 
 **Dia 01 =** Desenvolvimento do cabeçalho e lista de consultas.  
 
-**Dia 02 =** Desenvolvimento do rodapé e botão flutuante. 
-_Opicional: Ao clicar no botão flutuante cria um efeito escuro por cima da tela principal e exibe dois outros botões: "Nova consulta na casa do paciente" e "Nova consulta por vídeo"._  
+**Dia 02 =** Desenvolvimento do rodapé e botão flutuante.  
+_Opcional: Ao clicar no botão flutuante cria um efeito escuro por cima da tela principal e exibe dois outros botões: "Nova consulta na casa do paciente" e "Nova consulta por vídeo"._  
 
 **Dia 03 =** Refatorar com unidades de medidas relativas e limites de resolução de layouts responsivos.  
 
