@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+        <title>AluraMed | Responsividade - 7daysOfCode</title>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header class="cabecalho">
+                <nav class="cabecalho__menu" aria-label="Menu de navegação">
+                    <ul class="menu__lista">
+                        <li class="lista__item">
+                            <a class="item__link item__link--ativo item__link--consultas" href="#">Consultas</a>
+                        </li>
+                        <li class="lista__item">
+                            <a class="item__link item__link--clientes" href="#">Clientes</a>
+                        </li>
+                        <li class="lista__item">
+                            <a class="item__link item__link--relatorios" href="#">Relatórios</a>
+                        </li>
+                        <li class="lista__item">
+                            <a class="item__link item__link--menu" href="#">Menu</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main class="principal">
+                <div class="perfil">
+                    <img class="perfil__avatar" src="assets/img/perfil-1.png" alt="">
+                    <div class="perfil__infos">
+                        <h1 class="infos__nome">Olá, Sônia</h1>
+                        <h2 class="infos__consultas">Mais 4 consultas hoje</h2>
+                    </div>
+                </div>
+
+                <section class="agenda">
+                    <h2 class="agenda__data">Hoje</h2>
+                    <ul>
+                        <li class="card">
+                            <div class="card__infos">
+                                <img class="infos__img" src="/assets/img/perfil-2.png" alt="">
+                                <div class="infos__dados">
+                                    <h3 class="dados__paciente">Luciana Dias</h3>
+                                    <p class="dados__consulta dados__consulta--remoto">Consulta remota</p>
+                                </div>
+                                <div class="infos__btn">
+                                    <button class="btn__chat"></button>
+                                </div>
+                            </div>
+                            <div class="card__atendimento">
+                                <p class="atendimento__hora">14:00 - 15:00 (1 hora)</p>
+                                <div class="atendimento__btn">
+                                    <a class="btn__video" href="#">Ligar por vídeo</a>
+                                    <a class="btn__audio" href="#">Ligar por áudio</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <div class="card__infos">
+                                <img class="infos__img" src="/assets/img/perfil-3.png" alt="">
+                                <div class="infos__dados">
+                                    <h3 class="dados__paciente">Larissa Santana</h3>
+                                    <p class="dados__consulta dados__consulta--local">Consulta no local</p>
+                                </div>
+                                <div class="infos__btn">
+                                    <button class="btn__chat"></button>
+                                </div>
+                            </div>
+                            <div class="card__atendimento">
+                                <p class="atendimento__hora">16:00 - 17:00 (1 hora)</p>
+                                <div class="atendimento__btn">
+                                    <a class="btn__endereco" href="#">Ver endereço</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <div class="card__infos">
+                                <img class="infos__img" src="/assets/img/perfil-4.png" alt="">
+                                <div class="infos__dados">
+                                    <h3 class="dados__paciente">Marcos Correia</h3>
+                                    <p class="dados__consulta dados__consulta--remoto">Consulta remota</p>
+                                </div>
+                                <div class="infos__btn">
+                                    <button class="btn__chat"></button>
+                                </div>
+                            </div>
+                            <div class="card__atendimento">
+                                <p class="atendimento__hora">17:20 - 18:00 (40 minutos)</p>
+                                <div class="atendimento__btn">
+                                    <a class="btn__video" href="#">Ligar por vídeo</a>
+                                    <a class="btn__audio" href="#">Ligar por áudio</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <h2 class="agenda__data">Amanhã</h2>
+                    <ul>
+                        <li class="card">
+                            <div class="card__infos">
+                                <img class="infos__img" src="/assets/img/perfil-5.png" alt="">
+                                <div class="infos__dados">
+                                    <h3 class="dados__paciente">Clara Lemos</h3>
+                                    <p class="dados__consulta dados__consulta--local">Consulta no local</p>
+                                </div>
+                                <div class="infos__btn">
+                                    <button class="btn__chat"></button>
+                                </div>
+                            </div>
+                            <div class="card__atendimento">
+                                <p class="atendimento__hora">18:00 - 19:00 (1 hora)</p>
+                                <div class="atendimento__btn">
+                                    <a class="btn__endereco" href="#">Ver endereço</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <div class="card__infos">
+                                <img class="infos__img" src="/assets/img/perfil-2.png" alt="">
+                                <div class="infos__dados">
+                                    <h3 class="dados__paciente">Luciana Dias</h3>
+                                    <p class="dados__consulta dados__consulta--remoto">Consulta remota</p>
+                                </div>
+                                <div class="infos__btn">
+                                    <button class="btn__chat"></button>
+                                </div>
+                            </div>
+                            <div class="card__atendimento">
+                                <p class="atendimento__hora">14:00 - 15:00 (1 hora)</p>
+                                <div class="atendimento__btn">
+                                    <a class="btn__video" href="#">Ligar por vídeo</a>
+                                    <a class="btn__audio" href="#">Ligar por áudio</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <div class="card__infos">
+                                <img class="infos__img" src="/assets/img/perfil-4.png" alt="">
+                                <div class="infos__dados">
+                                    <h3 class="dados__paciente">Marcos Correia</h3>
+                                    <p class="dados__consulta dados__consulta--remoto">Consulta remota</p>
+                                </div>
+                                <div class="infos__btn">
+                                    <button class="btn__chat"></button>
+                                </div>
+                            </div>
+                            <div class="card__atendimento">
+                                <p class="atendimento__hora">17:20 - 18:00 (40 minutos)</p>
+                                <div class="atendimento__btn">
+                                    <a class="btn__video" href="#">Ligar por vídeo</a>
+                                    <a class="btn__audio" href="#">Ligar por áudio</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <div class="card__infos">
+                                <img class="infos__img" src="/assets/img/perfil-3.png" alt="">
+                                <div class="infos__dados">
+                                    <h3 class="dados__paciente">Larissa Santana</h3>
+                                    <p class="dados__consulta dados__consulta--local">Consulta no local</p>
+                                </div>
+                                <div class="infos__btn">
+                                    <button class="btn__chat"></button>
+                                </div>
+                            </div>
+                            <div class="card__atendimento">
+                                <p class="atendimento__hora">16:00 - 17:00 (1 hora)</p>
+                                <div class="atendimento__btn">
+                                    <a class="btn__endereco" href="#">Ver endereço</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <h2 class="agenda__data">Quarta-feira</h2>
+                    <ul>
+                        <li class="card">
+                            <div class="card__infos">
+                                <img class="infos__img" src="/assets/img/perfil-5.png" alt="">
+                                <div class="infos__dados">
+                                    <h3 class="dados__paciente">Clara Lemos</h3>
+                                    <p class="dados__consulta dados__consulta--local">Consulta no local</p>
+                                </div>
+                                <div class="infos__btn">
+                                    <button class="btn__chat"></button>
+                                </div>
+                            </div>
+                            <div class="card__atendimento">
+                                <p class="atendimento__hora">18:00 - 19:00 (1 hora)</p>
+                                <div class="atendimento__btn">
+                                    <a class="btn__endereco" href="#">Ver endereço</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <div class="card__infos">
+                                <img class="infos__img" src="/assets/img/perfil-2.png" alt="">
+                                <div class="infos__dados">
+                                    <h3 class="dados__paciente">Luciana Dias</h3>
+                                    <p class="dados__consulta dados__consulta--remoto">Consulta remota</p>
+                                </div>
+                                <div class="infos__btn">
+                                    <button class="btn__chat"></button>
+                                </div>
+                            </div>
+                            <div class="card__atendimento">
+                                <p class="atendimento__hora">14:00 - 15:00 (1 hora)</p>
+                                <div class="atendimento__btn">
+                                    <a class="btn__video" href="#">Ligar por vídeo</a>
+                                    <a class="btn__audio" href="#">Ligar por áudio</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <div class="card__infos">
+                                <img class="infos__img" src="/assets/img/perfil-4.png" alt="">
+                                <div class="infos__dados">
+                                    <h3 class="dados__paciente">Marcos Correia</h3>
+                                    <p class="dados__consulta dados__consulta--remoto">Consulta remota</p>
+                                </div>
+                                <div class="infos__btn">
+                                    <button class="btn__chat"></button>
+                                </div>
+                            </div>
+                            <div class="card__atendimento">
+                                <p class="atendimento__hora">17:20 - 18:00 (40 minutos)</p>
+                                <div class="atendimento__btn">
+                                    <a class="btn__video" href="#">Ligar por vídeo</a>
+                                    <a class="btn__audio" href="#">Ligar por áudio</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <div class="card__infos">
+                                <img class="infos__img" src="/assets/img/perfil-3.png" alt="">
+                                <div class="infos__dados">
+                                    <h3 class="dados__paciente">Larissa Santana</h3>
+                                    <p class="dados__consulta dados__consulta--local">Consulta no local</p>
+                                </div>
+                                <div class="infos__btn">
+                                    <button class="btn__chat"></button>
+                                </div>
+                            </div>
+                            <div class="card__atendimento">
+                                <p class="atendimento__hora">16:00 - 17:00 (1 hora)</p>
+                                <div class="atendimento__btn">
+                                    <a class="btn__endereco" href="#">Ver endereço</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="agendamentos">
+                    <h2 class="agendamentos__titulo">Cadastrar nova consulta</h2>
+                    <button class="agendamentos__btn btn btn__agendar" aria-label="Cadastrar nova consulta">
+                    </button>
+        
+                    <ul class="lista">
+                        <li class="lista__btn">
+                            <span class="btn__texto">Nova consulta na casa do paciente</span>
+                            <button class="btn btn__agendar--local" aria-label="Nova consulta na casa do paciente"></button>
+                        </li>
+                        <li class="lista__btn">
+                            <span class="btn__texto">Nova consulta por vídeo</span>
+                            <button class="btn btn__agendar--remoto" aria-label="Nova consulta por vídeo"></button>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="cadastro">
+                    <h2 class="cadastro__titulo">Cadastrar nova consulta</h2>
+                    <form class="cadastro__formulario">
+                        <fieldset class="formulario__box">
+                            <label for="name" class="form__label">Nome do paciente</label>
+                            <input id="name" class="form__input" type="text" required placeholder="Escreva o nome do paciente">
+                            <label for="localizacao" class="form__label">Selecione o tipo de consulta</label>
+                            <select id="localizacao" class="form__input">
+                                <option selected disabled value="">Selecione</option>
+                                <option>Consulta presencial</option>
+                                <option>Consulta remota</option>
+                            </select>
+                            <label for="data-hora" class="form__label">Data e horário</label>
+                            <input id="data-hora" class="form__input" type="datetime-local" required>
+                            <label for="mensagem" class="form__label">Observações</label>
+                            <textarea id="mensagem" class="form__input" cols="60" rows="10" placeholder="Escreva sua observação sobre a consulta ou paciente."></textarea>
+
+                            <input class="form__input" type="submit" value="Cadastrar consulta">
+                        </fieldset>
+                    </form>
+                </section>
+            </main>
+
+            <footer class="rodape">
+                <nav class="rodape__navbar" aria-label="Menu de navegação">
+                    <div class="navbar__item">
+                        <img class="item__img" src="/assets/img/consultas.svg" alt="">
+                        <a class="item__link item__link--ativo" href="#">Consultas</a>
+                    </div>
+                    <div class="navbar__item">
+                        <img class="item__img item__img--color" src="/assets/img/clientes.svg" alt="">
+                        <a class="item__link" href="#">Clientes</a>
+                    </div>
+                    <div class="navbar__item">
+                        <img class="item__img item__img--color" src="/assets/img/relatorios.svg" alt="">
+                        <a class="item__link" href="#">Relatórios</a>
+                    </div>
+                    <div class="navbar__item">
+                        <img class="item__img item__img--color" src="/assets/img/menu.svg" alt="">
+                        <a class="item__link" href="#">Menu</a>
+                    </div>
+                </nav>
+            </footer>
+        </div>
+
+        <div class="copyright">
+            <p class="copy__dev">Any Buss - Desenvolvedora Front-end</p>
+            <p class="copy__alura">Desafio de Responsividade - 7 Days Of Code da Alura: <a class="copy__link" href="https://7daysofcode.io/" target="_blank">7daysofcode.io/</a></p>
+        </div>
+
+        <script src="/assets/js/main.js"></script>
+    </body>
+</html>

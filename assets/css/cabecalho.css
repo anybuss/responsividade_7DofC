@@ -1,0 +1,73 @@
+.cabecalho {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .wrapper {
+        max-width: 1440px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 20% 80%;
+    }
+
+    .cabecalho {
+        display: block;
+    }
+
+    .cabecalho__menu {
+        height: 100%;
+        background-color: var(--color-branco);
+        border-right: .25rem solid var(--color-opacity);
+        padding-top: 1rem;
+    }
+
+    .menu__lista .item__link {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        color: var(--color-secundaria);
+        font-size: 1.25rem;
+        padding-bottom: .5rem;
+    }
+
+    .menu__lista .item__link:hover {
+        font-weight: 500;
+        text-decoration: underline; 
+    }
+
+    .menu__lista .item__link--ativo,
+    .menu__lista .item__link:active {
+        color: var(--color-endereco);
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    .menu__lista .item__link--consultas::before,
+    .menu__lista .item__link--clientes::before,
+    .menu__lista .item__link--relatorios::before,
+    .menu__lista .item__link--menu::before {
+        padding-right: 1rem;
+    }
+
+    .menu__lista .item__link--clientes::before,
+    .menu__lista .item__link--relatorios::before,
+    .menu__lista .item__link--menu::before {
+        opacity: .6;
+    }
+
+    .menu__lista .item__link--consultas::before {
+        content: url("/assets/img/consultas.svg");
+    }
+
+    .menu__lista .item__link--clientes::before {
+        content: url("/assets/img/clientes.svg");
+    }
+
+    .menu__lista .item__link--relatorios::before {
+        content: url("/assets/img/relatorios.svg");
+    }
+
+    .menu__lista .item__link--menu::before {
+        content: url("/assets/img/menu.svg");
+    }
+}

@@ -1,0 +1,87 @@
+.agendamentos {
+    position: relative;
+}
+
+.agendamentos__titulo {
+    display: none;
+}
+
+.agendamentos__btn {
+    position: fixed;
+    right: 1rem;
+    bottom: 4rem;
+}
+
+.btn {
+    border-radius: 100%;
+    border: none;
+    background-color: var(--color-endereco);
+    box-shadow: 0px 0px 8px 0px var(--color-principal);
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+}
+
+.btn__agendar {
+    background-image: url("/assets/img/btn-mais.svg");
+}
+
+.btn__agendar--local {
+    background-image: url("/assets/img/btn-local.svg");
+}
+
+.btn__agendar--remoto {
+    background-image: url("/assets/img/btn-remoto.svg");
+}
+
+.btn__agendar,
+.btn__agendar--local,
+.btn__agendar--remoto {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.lista {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0, 70%);
+    bottom: -9999px;
+    padding-bottom: 7rem;
+    transform: translateY(100%);
+    transition: transform .5s linear;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.lista--ativo {
+    transform: translateY(0);
+    bottom: 0;
+}
+
+.lista__btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn__texto {
+    font-weight: 500;
+    font-size: .75rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    padding: 2px .5rem;
+    margin-right: 1rem;
+    background-color: var(--color-branco);
+}
+
+@media screen and (min-width: 1024px) {
+    .agendamentos {
+        display: none;
+    }
+}

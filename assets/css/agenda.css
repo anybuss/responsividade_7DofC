@@ -1,0 +1,175 @@
+.agenda {
+    margin: 2rem 1rem;
+}
+
+.agenda ul:last-child {
+    margin-bottom: 4rem;
+}
+
+.agenda__data {
+    display: flex;
+    font-weight: 700;
+    line-height: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: var(--color-branco);
+    border-radius: .5rem;
+    margin: 1rem auto;
+}
+
+.card__infos,
+.card__atendimento {
+    padding: 1rem;
+}
+
+.card__infos {
+    display: flex;
+    border-bottom: 1px solid var(--color-opacity);
+}
+
+.infos__img {
+    border-radius: 1rem;
+    width: 35px;
+    height: 35px;
+}
+
+.infos__dados {
+    padding-left: 1rem;
+}
+
+.dados__paciente {
+    font-weight: 700;
+    font-size: .9rem;
+    padding-bottom: .25em;
+}
+
+.dados__consulta {
+    color: var(--color-secundaria);
+    font-size: .75rem;
+}
+
+.dados__consulta--remoto::before,
+.dados__consulta--local::before {
+    padding-right: .5rem;
+}
+
+.dados__consulta--remoto::before {
+    content: url("/assets/img/remoto.svg");
+}
+
+.dados__consulta--local::before {
+    content: url("/assets/img/local.svg");
+}
+
+.infos__btn {
+    margin-left: auto;
+}
+
+.btn__chat {
+    border-radius: 1rem;
+    padding: 1rem;
+    border: none;
+    background-color: var(--color-terciaria);
+    background-image: url("/assets/img/chat.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.card__atendimento {
+    padding-top: .5rem;
+}
+
+.atendimento__hora {
+    font-weight: 500;
+    font-size: .75rem;
+    padding-bottom: .5rem;
+}
+
+.atendimento__btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn__video,
+.btn__audio,
+.btn__endereco {
+    text-align: center;
+    text-decoration: none;
+    border-radius: .5rem;
+    padding: .75rem 1rem;
+    font-size: .8rem;
+    font-weight: 500;
+    width: 50%;
+}
+
+.btn__video {
+    color: var(--color-branco);
+    background-color: var(--color-video);
+    margin-right: 1.2rem;
+}
+
+.btn__audio {
+    color: var(--color-principal);
+    background-color: var(--color-branco);
+    border: 1px solid var(--color-opacity);
+}
+
+.btn__endereco {
+    color: var(--color-branco);
+    background-color: var(--color-endereco);
+    width: 100%;
+}
+
+@media screen and (min-width: 500px) {
+    .agenda ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+
+    .card {
+        width: 45%;
+    }
+
+    .card:nth-child(3n) {
+        margin-left: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .agenda ul {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .agenda ul:last-child {
+        margin-bottom: 0;
+    }
+
+    .card {
+        width: 30%;
+    }
+
+    .card:nth-child(3n) {
+        margin-left: auto;
+    }
+
+    .card:nth-child(4n) {
+        margin-left: 1rem;
+    }
+
+    .dados__consulta--remoto::before,
+    .dados__consulta--local::before {
+    padding-right: .25rem;
+    }
+
+    .btn__video {
+        margin-right: .25rem;
+    }
+}

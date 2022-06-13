@@ -1,0 +1,56 @@
+.principal {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.perfil {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+}
+
+.perfil__avatar {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.perfil__infos {
+    padding-left: 1rem;
+}
+
+.infos__nome {
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding-bottom: .25rem;
+}
+
+.info__consultas {
+    color: var(--color-secundaria);
+    font-size: .9rem;
+}
+
+@media screen and (min-width: 780px) {
+    .perfil__avatar {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .perfil__avatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    .infos__nome {
+        font-size: 1.75rem;
+    }
+
+    .info__consultas {
+        font-size: 1.5rem;
+    }
+}
